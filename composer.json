@@ -6,6 +6,7 @@
         {
             "name": "Jakub Kosiński",
             "email": "j.kosinski@zdrojowainvest.pl"
+            "X":i
         }
     ],
     "homepage": "https://github.com/zdrojowa/authmodule",
@@ -28,6 +29,13 @@
     "autoload-dev": {
         "psr-4": {
             "Zdrojowa\\AuthModule\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zdrojowa\\AuthModule\\AuthModuleServiceProvider"
+            ]
         }
     }
 }
