@@ -32,10 +32,10 @@ class AuthModuleServiceProvider extends ServiceProvider
      */
     protected function loadViews(): AuthModuleServiceProvider
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', AuthModule::name());
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'AuthModule');
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/' . AuthModule::name()),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/' . 'AuthModule'),
         ], 'views');
 
         return $this;
@@ -46,10 +46,10 @@ class AuthModuleServiceProvider extends ServiceProvider
      */
     protected function loadTranslations(): AuthModuleServiceProvider
     {
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang/', AuthModule::name());
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang/', 'AuthModule');
 
         $this->publishes([
-            __DIR__ . '/../resources/lang/' => resource_path('lang/vendor/' . AuthModule::name()),
+            __DIR__ . '/../resources/lang/' => resource_path('lang/vendor/' . 'AuthModule'),
         ], 'views');
 
         return $this;
