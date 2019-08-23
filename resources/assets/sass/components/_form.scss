@@ -1,0 +1,176 @@
+.form-layout {
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background;
+    background-image: $background-img;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    font-weight: 300;
+
+    form {
+      padding: 80px 40px;
+      background-color: $formBackground;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 550px;
+      border-radius: 7px;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+
+      .alert {
+        position: relative;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        display: flex;
+        color: #fff;
+        width: 100%;
+        align-items: center;
+
+        .alert-icon {
+          font-size: 24px;
+
+          .mdi {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        &.danger {
+          background-color: $dangerColor;
+        }
+
+        .alert-content {
+          font-size: 14px;
+          margin-left: 10px;
+        }
+
+
+      }
+
+      * {
+        outline: none;
+      }
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        height: 100%;
+        padding: 0px 30px;
+      }
+
+      .form-header {
+        color: #fff;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+
+        img {
+          height: 70px;
+        }
+      }
+
+      .form-group {
+        width: 100%;
+        margin-top: 25px;
+        color: #fff;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+
+        .error-text {
+          color: $dangerColor;
+          margin-top: 3px;
+          font-size: 11px;
+        }
+
+        .form-control {
+          border-radius: 4px;
+          border: 1px solid $inputBorderColor;
+          font-size: 0.875rem;
+          padding: 0.56rem 0.75rem;
+          background-color: $inputBackground;
+          line-height: 14px;
+          color: $inputFontColor;
+
+          &:-webkit-autofill {
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            -webkit-text-fill-color: $inputFontColor;
+            -webkit-box-shadow: 0 0 0px 1000px $inputBackground inset !important;
+          }
+
+          &.danger, &.danger:-webkit-autofill {
+            border-color: $dangerColor !important;
+          }
+
+        }
+
+        label {
+          font-size: 14px;
+          color: darken($inputFontColor, 20%);
+          margin-bottom: 5px;
+
+        }
+
+      }
+
+      .form-submit {
+        cursor: pointer;
+        margin-top: 30px;
+        background-color: #47a447;
+        border: none;
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 8px 35px;
+        border-radius: 3px;
+      }
+
+
+    }
+
+    .checkbox {
+      display: flex;
+      cursor: pointer;
+      user-select: none;
+      align-items: center;
+
+      .label {
+        margin-left: 10px;
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      .checkbox-holder {
+        height: 23px;
+        width: 23px;
+        border-radius: 3px;
+        background-color: transparent;
+        border: 2px solid #0088cc;
+        display: flex;
+        justify-content: center;
+        color: $formBackground;
+        font-size: 20px;
+        will-change: background-color;
+        transition: .2s background-color ease-in-out;
+
+        > .mdi {
+          display: flex;
+        }
+      }
+
+      &.active {
+        .checkbox-holder {
+          background-color: #0088cc;
+        }
+      }
+
+    }
+  }
+}

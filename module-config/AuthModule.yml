@@ -1,0 +1,13 @@
+username: email
+displayName: name
+remember: remember
+password: password
+
+
+loginPath: /login
+redirectAfterLogin: /home
+
+registerPath: /register
+redirectAfterRegister: /login
+
+userModel: App\User

@@ -1,0 +1,7 @@
+name: AuthModule
+version: 0.0.1
+
+aclAnchor: auth
+aclName: AuthModule
+
+routePrefix: AuthModule

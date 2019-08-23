@@ -1,0 +1,32 @@
+login:
+  path: '{loginPath}'
+  controller: Zdrojowa\AuthModule\Http\Controllers\LoginController@showLoginForm
+  methods:
+    - GET
+  middlewares:
+    - web
+
+login.post:
+  path: '{loginPath}'
+  controller: Zdrojowa\AuthModule\Http\Controllers\LoginController@login
+  methods:
+    - POST
+  middlewares:
+    - web
+
+register:
+  path: '{registerPath}'
+  controller: Zdrojowa\AuthModule\Http\Controllers\RegisterController@showRegisterForm
+  methods:
+    - GET
+  middlewares:
+    - web
+
+register.post:
+  path: '{registerPath}'
+  controller: Zdrojowa\AuthModule\Http\Controllers\RegisterController@register
+  methods:
+    - POST
+  middlewares:
+    - web
+
