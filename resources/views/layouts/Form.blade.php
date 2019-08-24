@@ -17,8 +17,8 @@
         @yield('content')
     </div>
 
-    <script src="/js/jquery.js"></script>
-    <script src="/js/jquery.autofill.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://github.com/tbosch/autofill-event/blob/cdf6c328e1ca472c00daa8f10403910ddd958f30/src/autofill-event.js"></script>
     <script src="{{ mix('vendor/js/AuthModule.js') }}"></script>
     @yield('javascript')
 </body>

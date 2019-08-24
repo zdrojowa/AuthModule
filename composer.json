@@ -29,12 +29,5 @@
         "psr-4": {
             "Zdrojowa\\AuthModule\\Tests\\": "tests"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Zdrojowa\\AuthModule\\AuthModuleServiceProvider"
-            ]
-        }
     }
 }
