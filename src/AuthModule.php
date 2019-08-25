@@ -4,7 +4,7 @@ namespace Zdrojowa\AuthModule;
 
 
 use Illuminate\Support\Facades\Lang;
-use Zdrojowa\CmsKernel\Contracts\Modules\Module;
+use Zdrojowa\CmsKernel\Modules\Module;
 
 /**
  * @method static name()
