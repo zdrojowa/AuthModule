@@ -4,7 +4,7 @@
     <form method="post" action="{{route('AuthModule::login.post')}}">
         @csrf
         <div class="form-header">
-            <img src="/vendor/img/AuthModule/zdrojowa-invest-hotels.svg" alt="">
+            <img src="{{url('/img/AuthModule/logo.svg')}}" alt="">
         </div>
 
 
