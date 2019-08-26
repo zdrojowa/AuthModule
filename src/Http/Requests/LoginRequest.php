@@ -4,7 +4,6 @@ namespace Zdrojowa\AuthModule\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Zdrojowa\AuthModule\AuthModule;
-use Lang;
 
 class LoginRequest extends FormRequest
 {

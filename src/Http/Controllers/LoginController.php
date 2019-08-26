@@ -3,7 +3,6 @@
 namespace Zdrojowa\AuthModule\Http\Controllers;
 
 use Auth;
-use Illuminate\Support\Facades\Lang;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Http\RedirectResponse;

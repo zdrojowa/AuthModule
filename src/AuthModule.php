@@ -4,7 +4,7 @@ namespace Zdrojowa\AuthModule;
 
 
 use Illuminate\Support\Facades\Lang;
-use Zdrojowa\CmsKernel\Modules\Module;
+use Selene\Modules\Module;
 
 /**
  * @method static name()
