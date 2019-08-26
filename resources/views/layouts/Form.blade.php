@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="{{ 'css/Zdrojowa.css' }}">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.1.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="{{ mix('vendor/css/AuthModule.css') }}">
 
     @yield('stylesheet')
