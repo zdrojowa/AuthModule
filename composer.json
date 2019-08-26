@@ -14,7 +14,7 @@
     "homepage": "https://github.com/zdrojowa/authmodule",
     "keywords": ["Laravel", "AuthModule"],
     "require": {
-        "zdrojowa/cms-kernel": ">=0.0.5"
+        "zdrojowa/cms-kernel": ">=0.0.4"
     },
     "autoload": {
         "psr-4": {
