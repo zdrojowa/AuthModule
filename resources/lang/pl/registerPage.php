@@ -13,6 +13,8 @@ return [
     'password-confirmation' => 'Potwierdź hasło',
     'password-confirmation-placeholder' => 'Potwierdź hasło',
 
-    'sign-up' => 'Zarejerstruj się'
+    'sign-up' => 'Zarejerstruj się',
+
+    'register-success' => 'Konto zostało utworzone. Zaloguj się'
 
 ];

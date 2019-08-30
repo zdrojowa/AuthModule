@@ -40,7 +40,7 @@ class RegisterController extends Controller
 
         $this->guard()->login($user);
 
-        return $this->registered($request, $user) ?: redirect(AuthModule::redirectAfterRegister());
+        return $this->registered($request, $user) ?: redirect(AuthModule::redirectAfterRegister())->withErrors(['register' => trans('AuthModule::registerPage.register-success')]);
     }
 
     /**

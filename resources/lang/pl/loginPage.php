@@ -8,5 +8,5 @@ return [
     'password-placeholder' => 'Hasło',
 
     'remember-me' => 'Zapamiętaj mnie',
-    'sign-in' => 'Zaloguj się'
+    'sign-in' => 'Zaloguj się',
 ];

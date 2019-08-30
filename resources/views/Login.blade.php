@@ -9,7 +9,16 @@
 
 
 
-
+        @error('register')
+            <div class="alert success">
+                <div class="alert-icon">
+                    <i class="mdi mdi-alert-circle"></i>
+                </div>
+                <div class="alert-content">
+                    {{ $message }}
+                </div>
+            </div>
+        @enderror
         @error('auth')
             <div class="alert danger">
                 <div class="alert-icon">

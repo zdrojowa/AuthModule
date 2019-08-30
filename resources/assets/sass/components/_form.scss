@@ -46,6 +46,10 @@
           background-color: $dangerColor;
         }
 
+        &.success {
+          background-color: $successColor;
+        }
+
         .alert-content {
           font-size: 14px;
           margin-left: 10px;
@@ -99,7 +103,6 @@
           color: $inputFontColor;
 
           &:-webkit-autofill {
-            border-color: rgba(255, 255, 255, 0.1) !important;
             -webkit-text-fill-color: $inputFontColor;
             -webkit-box-shadow: 0 0 0px 1000px $inputBackground inset !important;
           }
